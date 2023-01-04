@@ -1,0 +1,40 @@
+VARIABLES
+
+Son formas de almacenar valores, en JS se puede modificar su tipo constantemente y no hace falta asignarles un tipo. 
+Se declaran con las palabras clave Var, Let o Const. Var es la forma estándar de declararlas. Let es lo mismo pero con una diferencia 
+clave al crear un 'nivel de scope'. Const crea una variable que no se puede cambiar.
+
+STRINGS
+
+Es un tipo de dato. Hay diferentes tipos de dato. Estos son clases que se le asignan a los datos con tal de 
+darles operaciones específicas y limitar los valores que aceptan.
+Los tipos de dato básicos en JS son Number, Boolean y String. Los String guardan texto. Se definen con texto entre
+comillas. Todo lo que esté entre comillas se interpreta como un valor String.
+
+FUNCIONES (argumentos, return)
+
+Las funciones son formas de trabajar con las variables. Hay diferentes formas de declarar una función. Se declaran siempre con la 
+palabra clave Function. La linea donde se declaran se compone de la siguiente forma: Function nombreFuncion () {}. Entre los 
+paréntesis van los argumentos y entre las llaves va el código que ejecuta la función cuando se llama. Para llamar la función
+se tiene que colocar el nombre de la función y los paréntesis: nombreFuncion ().
+Los argumentos de una función son variables. Puede ir más de una variable como argumento. Estos se declaran para ser usados 
+dentro de la función. Se asigna un valor a los argumentos a través del llamado de la función. Cuando se llama a la función
+nombreFuncion (), entre los paréntesis se colocan los valores que se cargan para los argumentos. Allí también puede ir el nombre 
+de una variable que se haya cargado con un valor anteriormente. O sea, los argumentos de la función tendrán el mismo valor que la variable. 
+Dentro de las funciones, entre llaves, se puede usar la declaración return (). Esta declaración es la única manera de conectar el resultado 
+de la función con el resto del programa. Si se trata de usar una variable que está dentro de una función en otra parte del programa,
+dará error. Lo que pasa dentro de la función está desconectado de todo. A través de la declaración return () se devuelve un valor que luego
+podrá ser depositado en una variable por fuera de la función. Dentro de los paréntesis va el nombre de una variable declarada en la función.
+
+DECLARACIONES IF
+
+Son declaraciones utilizadas para el control de flujo, una herramienta que sirve para interrumpir el flujo de trabajo del programa. En caso
+de que se cumplan las condiciones indicadas por el if, se devolverá el valor Boolean True y se ejecutará el código que esté entre llaves
+después del if. Si da False, se sigue ejecutando el resto del código del programa.
+Las declaraciones if usan operadores de comparación para comparar los valores entre paréntesis. Estos operadores de comparación son
+>, =>, <, =<, === y !==.
+
+VALORES BOOLEANOS (true, false)
+
+Los valores Booleanos se basan en la lógica de Boole para redes y equipos informáticos sobre el uso de código binario (ceros y unos).
+En esta lógica, solo existen dos posibilidades: ceros y unos o true y false. Se usan para indicar verdadero o falso.
