@@ -1,0 +1,33 @@
+ARRAY
+
+Un Array (matriz/arreglo) es algo parecido a una variable, pero contiene más de un valor y cada
+valor puede ser de cualquier tipo de dato, a diferencia de la variable que solo puede contener
+un solo valor y de un solo tipo. El Array se declara de la misma forma que una variable, solo que
+agregando unos corchetes después del operador de asignación (=). const nombreArray = [elemento1, elemento2].
+Los elementos del Array se tienen que separar unos de otros a través de una coma. Dentro del
+Array los elementos pueden ser boolean, string o number simultaneamente. Cada elemento se
+identifica con número de índice, que refleja su posición dentro del Array. Siempre, el índice
+comienza desde el número 0, o sea que el orden en un Array de 3 elementos sería 0, 1 y 2.
+
+Hay muchos métodos para manejar los datos de un Array. 
+Existe el método .length, que permite saber el número de elementos que hay dentro del Array. Este método
+también permite acceder al último elemento del Array en caso de que no se sepa cuántos hay en él:
+return nombreArray[nombreArray.length -1]; //devuelve el elemento con el índice más alto. Algo importante
+de entender es que el índice siempre será menor que el número de elementos, puesto que el índice comienza
+a contarse desde 0 en vez de 1, que es el número por el que se comienza a contar la cantidad de elementos. 
+
+Se pueden asignar valores en un Array. Se tiene que llamar al Array y, entre corchetes, va el índice.
+Luego del operador de asignación va el valor a agregar. Se agregaría el valor en el índice dado en
+los corchetes. La asignación reemplaza el elemento del Array con el mismo índice por el nuevo elemento.
+Para agregar nuevos elementos sin reemplazar otros se usan otros métodos.
+
+.push y .pop permiten agregar y eliminar elementos en el último puesto del Array, respectivamente.
+Los métodos de agregar elementos deben tener entre paréntesis el valor a agregar. 
+.unshift y .shift permiten agregar y eliminar elementos en el primer puesto del Array, respectivamente.
+
+Para iterar por todo un Array, se suele usar el ciclo for de la siguiente manera.
+Imprime cada uno de los elementos del Array:
+const nombresEstudiantes = ['Pablo','Andres','Gerardo','Juan']
+for (let i = 0; i < nombresEstudiantes.length; i++){
+	console.log(nombresEstudiantes[i]);
+}

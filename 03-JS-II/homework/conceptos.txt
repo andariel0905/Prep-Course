@@ -1,0 +1,22 @@
+FOR
+
+Es un bucle. Se usa para repetir una porción de código de manera indefinida hasta que se ejecuta un
+número determinado de veces o hasta que se consigue lo que se desea. Se conforma por tres partes y
+tiene una sintaxis parecida al operador de comparación if. Comienza por la declaración del for,
+paréntesis y llaves. Dentro de las llaves va el código a ejecutar. En los paréntesis van 3 partes
+separadas cada una por un punto y coma ;. La primera parte es la declaración de una variable junto
+a su valor numérico (usualmente 0). La segunda parte es una expresión de comparación. El bucle for
+se repite una y otra vez cada vez que la expresión de comparación da true. La expresión evalúa
+la variable creada en la primera parte junto a otro valor. La tercer parte es el aumento del valor
+de la variable. for (var I = 0; I >= 0; I++){}
+
+&&, ||, !
+
+Son operadores lógicos. Se usan dentro de operadores de control de flujo. Los operadores de control
+de flujo evalúan los valores con operadores de comparación y devuelven true o false. Los operadores 
+lógicos sirven para expandir la cantidad de expresiones de comparación que van en los if y expandir
+sus condiciones. Cada uno funciona diferente. Se usan entre cada expresión de comparación. Los &&, 
+o AND, devuelven true si todas las comparaciones son verdaderas; si al menos una es falsa, devuelven 
+false. Los ||, o OR, evalúan si se cumple al menos una de las comparaciones. Si es así, devuelve true. 
+Si ninguna se cumple, devuelve false. El signo !, o NOT, devuelve el boolean contrario. Si la expresión 
+de comparación da true, el ! hace que se devuelva un false.
