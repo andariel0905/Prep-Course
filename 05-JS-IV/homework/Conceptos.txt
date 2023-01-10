@@ -1,0 +1,45 @@
+OBJETOS
+
+Los objetos son parecidos a un Array. Son contenedores de datos, pero más que reunir
+datos de diferentes índoles, los objetos se usan para guardar toda la información
+relacionada a una misma cosa. Se instancian con llaves en vez de con corchetes.
+Pueden guardar información a través de los pares clave/valor. La clave sería un nombre
+al que se le asigna un valor, algo así como una variable y el dato que almacena. Las claves
+son únicas e irrepetibles dentro de un programa, no puede haber dos claves con el mismo
+nombre. Los valores pueden ser de cualquier tipo, incluyendo array y funciones y hasta
+otro objeto.
+
+PROPIEDADES
+
+Las propiedades son el nombre que recibe cada par clave/valor. Se entiende como una variable
+asignada a un objeto, y cada propiedad cuenta como una característica del objeto.
+Al momento de borrar alguna propiedad, en vez de borrarla usando la palabra delete, se asigna como
+valor la palabra clave undefined. 
+
+METODOS
+
+Las funciones que están como propiedad de un objeto reciben el nombre de métodos. Esto es porque,
+si se llama el método del objeto, estás haciendo que el objeto haga algo. Una función es algo que,
+cuando es llamada, hace algo. Cuando la función está dentro del objeto, es el objeto el que está
+haciendo ese algo. Por tanto, el nombre más apropiado es el de método.
+
+BUCLE FOR...IN
+
+Es una de las dos formas estándar del bucle For. La forma que usamos antes funciona a partir de 
+los índices numéricos de un array. Los objetos no poseen índices numéricos. Por esto surge el
+bucle For...In. 
+La sintaxis es For(var clave In nombreObjeto){}. Tiene dos partes. La primera es la instanciación
+de una variable seguida de la palabra clave In y el nombre del objeto a iterar. Este bucle se puede
+usar para devolver la clave y su valor. La variable contiene la clave. Los objetos, al no tener
+índice numérico, usan las claves como índice. Si se coloca nombreObjeto [clave], devuelve el
+valor asignado a esa clave.
+
+NOTACION DE PUNTOS VS NOTACION DE CORCHETES
+
+Para acceder y asignar los valores de un objeto hay dos métodos principales: por notación de
+puntos y por notación de corchetes.
+Por puntos basta con colocar el nombre del objeto + un punto + el nombre de la clave. Eso es
+en caso de querer acceder. Para asignar es lo mismo, pero con un  operador de asignación (=).
+A la derecha del = va el valor.
+La notación de corchetes se usa para colocar variables ya existentes en los objetos. La sintaxis
+sería el nombre del objeto + corchetes. Entre corchetes va el nombre de la variable.
