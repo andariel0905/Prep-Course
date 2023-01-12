@@ -1,0 +1,41 @@
+PROTOTYPE
+
+Prototype es un objeto que poseen todas las clases. Prototype almacena en __proto__ los
+métodos asociados a una clase. Se utilizan de manera que no se tenga que declarar una y otra
+vez los métodos cada vez que se crea un objeto a partir de la clase. El método se crea una vez
+en el PROTOTYPE de la clase. Cada vez que se desee que un objeto ejecute el método,
+no lo hará desde sí mismo porque el método no está como una propiedad del objeto. Al instanciar
+un objeto, la clase le da acceso al __proto__, donde están los métodos. Cuando se llama un
+método de un objeto, se llama al método que está en PROTOTYPE.
+
+Cuando se trata de heredar los métodos de una clase padre a una clase hija, también se usa
+el PROTOTYPE, pero se usa el PROTOTYPE CHAIN. PROTOTYPE CHAIN contiene los métodos de la
+clase padre de la clase con la que se crea el objeto. 
+
+CONSTRUCTORS(de Clases)
+
+Constructor es una propiedad que poseen todos los objetos. Es una propiedad que apunta la
+clase con la que se creó el objeto.
+
+En general, se le dice constructor a la clase. Recibe el nombre porque es el constructor de
+los objetos. Se crean con la palabra clave function, seguida de unos paréntesis donde se
+colocan los argumentos que se van a usar para darles valores a las propiedades, y luego se
+ponen las llaves en las que estará el código como si se creara un objeto normalmente, solo que
+en cada propiedad debe estar la palabra clave THIS. Esto hará que esas propiedades se asignen
+al nuevo objeto porque THIS hará referencia a este. 
+Cuando se crea un objeto con un constructor, al instanciar el objeto se tienen que mandar los valores
+deseados para cada una de sus propiedades. La linea de código consiste en la declaración de una variable
+con CONST, LET o VAR + el nombre para el objeto + operador de asignación + palabra clave NEW + paréntesis
+y los valores para las propiedades.
+Si el constructor va a tener un método, el método se establece por fuera del constructor.
+Se hace con el nombre del constructor + PROTOTYPE + nombre del método = function () {}. Entre las llaves
+va el código que realizará el método.
+
+Al crear un objeto con un constructor, y el constructor está anidado con un contructor padre,
+puede haber problemas porque el objeto suele quedarse sin los métodos del padre. Para solucionar esto
+se tiene que hacer que el prototype del constructor hijo sea igual que el prototype del padre con el
+código nombreHijo.prototype = Object.create(nombrePadre.prototype) y nombreHijo.prototype.constructor = nombreHijo.
+Los constructores se anidan porque es una forma de organizar bien y tener una buena normalización
+de las clases. Normalizar una clase es manejar bien las propiedades de cada una para que no haya
+conflictos con la información y que haya cohesión entre las clases y las propiedades que poseen.
+Es necesario para la efectividad de un sistema y la base de datos.
