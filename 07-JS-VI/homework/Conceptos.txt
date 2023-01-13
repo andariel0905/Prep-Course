@@ -1,0 +1,38 @@
+CALLBACKS
+
+Un CallBack es una función que se usa como argumento para otra función. Se suele
+usar para agregar argumentos dentro de la función original. Está normalizado
+colocar la palabra 'cb' para identificar las funciones que se usarán como CallBack.
+
+Se usan CallBacks para trabajar con métodos de los Array. Ejemplo de estos métodos
+llamados métodos de orden superior son .forEach, .reduce y .map. Aquí el CallBack 
+se puede implementar como argumento de dos maneras: de manera anónima o llamándo 
+una función ya instanciada. De manera anónima, se escribe la función entre los
+paréntesis del método. Llamando una instanciada previamente es simplemente
+colocar el nombre de la función.
+
+El método .forEach se usa para ciclar por cada elemento del Array y aplicar el
+CallBack en cada elemento a medida que se va ciclando. El CallBack aquí acepta
+dos argumentos: primero el que apunta al elemento actual del Array (obligatorio)
+y el segundo es el que indica el índice del elemento (opcional).
+
+El método .reduce se usa para guardar todos los elementos en un acumulador y
+devolverlo cuando se acaba el ciclo. El CallBack se conforma de dos argumentos:
+el primero, un acumulador (obligatorio) y el segundo que apunta al elemento
+actual (obligatorio). La línea de código que siempre debe tener la función
+es un return que se ejecuta solamente cuando termina de ciclar, y que devuelve
+el resultado del .reduce. Luego, existe un tercer argumento adicional que se
+llama acumulador de arranque, que es un valor que se devuelve antes de que se
+devuelva el resultado del return. Sería: acumulador de arranque + resultado del
+return. El acumulador de arranque se pone como segundo argumento en el método
+.reduce, teniendo en cuenta que el primer argumento es la función. Sería así:
+Array.reduce(CallBack(acumulador, elemento){}, acumulador de arranque)
+
+El tercer método es .map. Se usa para devolver cada elemento en un Array. El CallBack
+aquí se conforma de dos argumentos: uno que apunta al elemento y otro opcional
+que indica el índice. El CallBack consta de una linea de código obligatoria que
+es el return. Se ejecuta cuando termina el ciclo. A diferencia del .reduce, el
+.map devuelve el array completo.
+
+Se tiene que tener en cuenta que estos métodos se usan para asignar valores a 
+variables. Se usan en la misma linea en que se instancia una variable.
