@@ -1,0 +1,46 @@
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfJkuqdQajPc7ssqctAowzk5luYcFCO1-BOA&usqp=CAU);
+}
+
+h1 {
+    color: blueviolet;
+}
+
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
+
+#thirdDiv {
+    overflow: auto;
+    zoom: 1;
+    position: relative;
+    height: 600px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 4px solid purple;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin-left: 8%;
+}
+
+li {
+    clear: left;
+}
+
+img {
+    float: left;
+    margin-bottom: 1%;
+    width: 70%;
+}
